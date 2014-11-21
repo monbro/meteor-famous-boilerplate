@@ -1,0 +1,46 @@
+/* CSS declarations go here */
+* {
+  font-family: Verdana, Arial, sans-serif;
+}
+
+body {
+  background-color: #000;
+}
+
+a:link {
+  color:#000;
+  text-decoration: none;
+}
+
+a:visited {
+  color:#000;
+}
+
+a:hover {
+  color:#33F;
+}
+
+.slide {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.slide-black {
+  background-color: black;
+}
+
+.slide-red {
+  background-color: red;
+}
+
+.slide-blue {
+  background-color: blue;
+}
+
+.slide-green {
+  background-color: green;
+}

@@ -1,0 +1,33 @@
+<template name="slideOne">
+  {{#StateModifier id="ourBasicStateModifierContainer"}}
+    {{#Surface class="slide slide-red color-white"}}
+      {{>slideOneContent}}
+    {{/Surface}}
+
+    {{#GridLayout size="[undefined,undefined]" dimensions="[3,3]"}}
+        {{#Surface modifier="StateModifier" class="color-white"}}
+            {{>examples_animate_item}}
+        {{/Surface}}
+        {{#Surface modifier="StateModifier" class="color-white"}}
+            {{>examples_animate_item}}
+        {{/Surface}}
+        {{#Surface modifier="StateModifier" class="color-white"}}
+            {{>examples_animate_item}}
+        {{/Surface}}
+        {{#famousEach textWords}}
+          {{>Surface template="examples_animate_item" modifier="StateModifier"  class="color-white"}}
+        {{/famousEach}}
+    {{/GridLayout}}
+
+  {{/StateModifier}}
+</template>
+
+<template name="slideOneContent">
+  <p>First Slide with some animation demonstrations.</p>
+
+  <p><button id="next">Next</button></p>
+</template>
+
+<template name="examples_animate_item">
+  <p>This is a box. {{name}}</p>
+</template>
